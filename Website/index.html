@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Repositories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Added favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="logo-bg.png" alt="RecodeHive Logo" width="50" height="50"> <!-- Added logo to navbar -->
+                <span class="brand-name">RecodeHive</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Organization</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="https://github.com/recodehive/machine-learning-repos" target="_blank">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="25" height="25"> <!-- GitHub Icon -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <div class="container">
+                <div>
+                    <div>
+                        <h1 class="welcome-title">Welcome to <span class="highlight">Machine Learning Repositories</span></h1>
+                        <p class="welcome-description">Explore a curated collection of diverse machine learning repositories available on GitHub, presented by the <span> <a href="https://github.com/recodehive"> RecodeHive </a></span>community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toggle button for Repository Statistics -->
+        <section>
+            <button id="toggle-stats"><span id="display">Show</span> Repository Statistics</button>
+        </section>
+
+        <!-- Statistics Cards -->
+    <section id="statistics-cards">
+        <h2>Repository Statistics</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-star stat-icon"></i> 
+                <h3>Total Stars</h3>
+                <p id="total-stars">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-code-branch stat-icon"></i> 
+                <h3>Total Forks</h3>
+                <p id="total-forks">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-exclamation-circle stat-icon"></i>
+                <h3>Open Issues</h3>
+                <p id="open-issues">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-balance-scale stat-icon"></i> 
+                <h3>License</h3>
+                <p id="license">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-database stat-icon"></i> 
+                <h3>Repository Size</h3>
+                <p id="repo-size">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-code stat-icon"></i> 
+                <h3>Most Used Language</h3>
+                <p id="most-used-language">Loading...</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Languages -->
+        <section id="languages">
+            <h2>Languages Used</h2>
+            <ul id="language-list"></ul>
+        </section>
+
+        <section id="repo-list">
+            <h2>Repositories</h2>
+            <ul id="directories">
+            </ul>
+        </section>
+
+        <section id="contributors">
+            <h1 class="contri-heading">Our Contributors</h1>
+            <div id="contributors-grid" class="contributors-grid">
+                <!-- Contributors will be loaded here by JavaScript -->
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Chatbot Button -->
+    <div class="chatbot-button" id="chatbot-button">
+        <img src="logo-bg.png" height="50px" width="50px">
+    </div>
+
+     <!-- Chatbox -->
+     <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            Recodehive's Chatbot
+            <span class="close-btn" id="close-chatbot">&times;</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-questions">
+            <p>Choose a question:</p>
+            <ul id="question-list">
+                <!-- Questions will be populated here -->
+            </ul>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button id="chatbot-send">Send</button>
+        </div>
+    </div>
+
+    <button id="go-to-top">TOP▶️</button> <!-- Go to top button -->
+
+    <footer class="footer">
+        <p>&copy; 2024 Machine Learning Repos - <a href="https://github.com/recodehive" id="footer-link">RecodeHive</a>. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
